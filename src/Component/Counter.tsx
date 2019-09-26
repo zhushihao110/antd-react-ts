@@ -1,6 +1,8 @@
 import * as React from "react"
 import { Button } from "antd"
 
+import data from "../Mock"
+
 import { connect } from "react-redux";
 
 import actions from "Store/actions/counter";
@@ -25,7 +27,8 @@ class Conuter extends React.Component<IProps, IState> {
         number: 0
     }
     render () {
-        console.log(this.props)
+        // console.log(this.props)
+        console.log(data)
         let { number, add, subtract, name} = this.props
         return(
             <div>
